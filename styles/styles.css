@@ -249,6 +249,11 @@ p {
       padding-bottom: 0;
     }
   }
+
+  .confirmation {
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
