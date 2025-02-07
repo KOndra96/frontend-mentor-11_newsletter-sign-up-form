@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-tomato: hsl(4, 100%, 67%);
+
+  --color-dark-slate-grey: hsl(234, 29%, 20%);
+  --color-charcoal-grey: hsl(235, 18%, 26%);
+  --color-grey: hsl(231, 7%, 60%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  background-color: var(--color-charcoal-grey, hsl(235, 18%, 26%));
+}
+
+.container {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+
+  padding: 1.25rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--color-white, hsl(0, 0%, 100%));
+}
+
+.card__content {
+  margin: auto;
+  padding: 0 2.5rem;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--color-dark-slate-grey, hsl(234, 29%, 20%));
+  }
+
+  & p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  & ul {
+
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+
+    list-style-type: none;
+
+    & li {
+      background-image: url(../assets/images/icon-list.svg);
+      background-repeat: no-repeat;
+
+      height: 25px;
+      line-height: 23px;
+
+      padding-left: 2.5rem;
+    }
+
+    & li+li {
+      margin-top: 0.5rem;
+    }
+  }
+
+  & form {
+    margin: 0;
+
+    & label {
+
+      font-size: 0.75rem;
+      font-weight: 700;
+
+      color: var(--color-dark-slate-grey, hsl(234, 29%, 20%));
+    }
+
+    & input {
+      margin-top: 0.5rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--color-grey, hsl(231, 7%, 60%));
+
+      &::placeholder {
+        color: var(--color-grey, hsl(231, 7%, 60%));
+      }
+    }
+
+    & button {
+      cursor: pointer;
+
+      border: none;
+
+      font-weight: 700;
+
+      color: var(--color-white, hsl(0, 0%, 100%));
+      background-color: var(--color-dark-slate-grey, hsl(234, 29%, 20%));
+    }
+
+    & input,
+    button {
+      width: 100%;
+
+      padding: 1rem;
+
+      border-radius: 0.5rem;
+
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+
+  text-align: center;
+  font-size: 0.6875rem;
+
+  color: var(--color-white, hsl(0, 0%, 100%));
+}
+
+.attribution a {
+  color: var(--color-tomato, hsl(4, 100%, 67%));
+}
