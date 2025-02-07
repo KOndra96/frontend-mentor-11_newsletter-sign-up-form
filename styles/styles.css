@@ -7,6 +7,8 @@
 :root {
   --color-tomato: hsl(4, 100%, 67%);
   --color-tomato-transparent: hsla(4, 100%, 67%, 0.2);
+  --color-green: hsl(120, 100%, 30%);
+  --color-green-transparent: hsla(120, 100%, 30%, 0.2);
 
   --color-dark-slate-grey: hsl(234, 29%, 20%);
   --color-charcoal-grey: hsl(235, 18%, 26%);
@@ -174,6 +176,13 @@ p {
   
   color: var(--color-tomato, hsl(4, 100%, 67%));
   background-color: var(--color-tomato-transparent, hsla(4, 100%, 67%, 0.2));
+}
+
+.input__success {
+  border: 2px solid var(--color-green, hsl(120, 100%, 30%));
+
+  color: var(--color-green, hsl(120, 100%, 30%));
+  background-color: var(--color-green-transparent, hsla(120, 100%, 30%, 0.2));
 }
 
 .confirmation {

@@ -37,6 +37,15 @@ function toggleConfirmation(email = 'ash@loremcompany.com') {
             Please open it and click the button inside to confirm your subscription.
         `;
     }
+
+    let emailInputObject = document.getElementById('email');
+    emailInputObject.classList.remove('input__error');
+    emailInputObject.classList.remove('input__ready');
+    emailInputObject.classList.add('input__success');
+
+    
+    let errorMessage = document.querySelector(`.email__error`);
+    errorMessage.classList.add('hide');
     
     cardContainer.classList.toggle('hide');
     confirmationContainer.classList.toggle('hide'); 
