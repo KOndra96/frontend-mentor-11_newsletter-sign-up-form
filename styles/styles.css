@@ -135,6 +135,8 @@ p {
       color: var(--color-white, hsl(0, 0%, 100%));
       background-color: var(--color-dark-slate-grey, hsl(234, 29%, 20%));
 
+      transition: 250ms ease background-color;
+
       &:hover, &:focus {
         background-color: var(--color-tomato, hsl(4, 100%, 67%));
         cursor: pointer;
@@ -212,7 +214,7 @@ p {
     color: var(--color-white, hsl(0, 0%, 100%));
     background-color: var(--color-dark-slate-grey, hsl(234, 29%, 20%));
 
-    
+    transition: 250ms ease background-color;
 
     &:hover, &:focus {
       background-color: var(--color-tomato, hsl(4, 100%, 67%));
