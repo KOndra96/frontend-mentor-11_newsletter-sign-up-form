@@ -81,7 +81,7 @@ body {
       background-image: url(../assets/images/icon-list.svg);
       background-repeat: no-repeat;
 
-      height: 25px;
+      min-height: 25px;
       line-height: 23px;
 
       padding-left: 2.5rem;
