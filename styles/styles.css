@@ -227,10 +227,13 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .card {
     padding: 0;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
 
     & .card__content {
       padding: 0.75rem;
