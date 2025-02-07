@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <script defer src="./js/script.js"></script>
 </head>
+
 <body>
 
   <!-- 
 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
   
+
+  
+
+   -->
+
   <main>
     <div class="card container">
       <div class="card__content col">
@@ -49,18 +52,31 @@
         <form action="#" novalidate>
           <label for="email">Email address</label>
           <input type="email" name="email" id="email" placeholder="email@company.com">
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button type="submit" id="card__button">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <img class="col" src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration">
+    </div>
+
+    <div class="confirmation container hide">
+      <header>
+        <img src="./assets/images/icon-success.svg" alt="Success">
+        <h2>Thanks for subscribing!</h2>
+      </header>
+      <p>
+        A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <a href="#" id="confirmation__button">Dismiss message</a>
     </div>
   </main>
 
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/KOndra96">KOndra96</a>.
     </div>
   </footer>
 </body>
+
 </html>
