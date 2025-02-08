@@ -56,6 +56,7 @@ function inputError(object, message = "") {
     let errorMessage = document.querySelector(`.${object}__error`);
 
     errorInputObject.classList.remove('input__ready');
+    emailInputObject.classList.remove('input__success');
     errorInputObject.classList.add('input__error');
 
     if(message != "") {
